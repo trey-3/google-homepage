@@ -1,0 +1,70 @@
+
+/*********************************
+ MAIN DIVISION
+ ********************************/
+
+.main {
+    display: block;
+    margin: 0 auto;
+    Height: 700px;
+    padding-top: 30px;
+    margin: 30px;
+    position: relative;
+    background: lightgray;
+}
+
+/*********************************
+ SEARCH FORM + BUTTONS
+ ********************************/
+
+
+form {
+    background: gray;
+
+
+}
+
+form input {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+}
+
+
+/*********************************
+ NAVIGATION
+ ********************************/
+
+
+.navigation {
+    padding: 20px 0;
+}
+
+/* Turns navigation elements inline and black, padding to each element */
+ nav li {
+    display: inline;
+    color: black;
+    padding: 0 4px;
+
+}
+
+
+/* Nav bar: hover effects */
+nav .left-nav:hover {
+    text-decoration: underline;
+}
+
+/* Nav bar: hyperlink effects */
+nav li a:link, nav li a:visited {
+    color: black;
+    text-decoration: none;
+}
+/* Push Specific nav elements to left */
+nav .left-nav {
+    float: left;
+}
+/* Push Specific nav elements to right */
+nav .right-nav {
+    float: right;
+}
+
