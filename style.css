@@ -65,11 +65,11 @@ being "inline" */
 .searchbar {
     text-align: center;
 }
-/* submit buttons inline, white, no border, bolded */
+/* submit buttons inline, white, hidden border, bolded */
 form .submit {
     display: inline;
     background: white;
-    border: 0;
+    border: 1px solid white;
     font-weight: bold;
     padding: 10px 12px;
     margin: 0 4px;
@@ -82,6 +82,7 @@ form .submit:hover {
     border: 1px solid #c6c6c6;
     background: #f8f8f8;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 2px;
 
     
 }
@@ -131,6 +132,13 @@ nav .right-nav {
 
 }
 
+/* Profile img */
+.navigation .profile {
+    background-image: url(https://lh3.googleusercontent.com/-8cW-jQ0zwvc/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaOIbxAWobWZQjj0McvdYCxozaM2ow/s32-c-mo/photo.jpg);
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    visibility: hidden;
+}
 
 /*********************************
  FOOTER
