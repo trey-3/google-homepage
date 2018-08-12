@@ -3,8 +3,10 @@
  ********************************/
 
 h1, h2, h3, h4, h5, h6, input, form, nav, p, ol, ul, li {
-    font-family: arial, serif !important;
+    font-family: arial, serif;
 }
+
+/** NOTE: ALL COLORS GRABBED FROM GOOGLE SITE **/
 
 
 /*********************************
@@ -14,26 +16,32 @@ h1, h2, h3, h4, h5, h6, input, form, nav, p, ol, ul, li {
  /* MAIN CONTAINER */
 .main {
     display: block;
-    Height: 700px;
+    Height: 1000px;
     margin: 30px;
     position: relative;
-    background: lightgray;
+    /*background: lightgray;*/
 }
 
 /*********************************
- SEARCH FORM + BUTTONS
+ SEARCH FORM + BUTTONS + IMG
  ********************************/
 
-/* Centers search bar inside .main */
+/* Centers search bar inside .main, pushes search bar + img slightly up */
 .main form {
-    background: gray;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -99%);
 
 
 }
+/* Proper sizing and spacing of google logo image */
+form img {
+    height: 240px;
+    width: auto;
+    margin-bottom: 24px;
+}
+
 /* All input elements are now centered and stacked */
 form input {
     display: block;
@@ -63,10 +71,18 @@ form .submit {
     background: white;
     border: 0;
     font-weight: bold;
+    padding: 10px 12px;
+    margin: 0 4px;
+    color: #757575;
 
 }
+/* hover effects on buttons */
+form .submit:hover {
+    color: black;
+    border: 1px solid #c6c6c6;
+    background: #f8f8f8;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 
-form .random {
     
 }
 
@@ -114,12 +130,27 @@ nav .right-nav {
     float: right;
 
 }
+
+
 /*********************************
  FOOTER
  ********************************/
-
+/* Proper footer sizing and border */
  footer {
-     height: 60px;
-     background: lightgray;
+     height: 40px;
+     background: white;
+     border-top: 1px solid #e4e4e4;
+     padding-bottom: 12px;
  }
+/* Text color */
+ footer nav li a:link, footer nav li a:visited {
+     color: #757575;
+ }
+/* proper hyperlink config */
+nav .left-nav:hover {
+    text-decoration: underline;
+}
 
+nav .right-nav:hover {
+    text-decoration: underline;
+}
