@@ -1,13 +1,20 @@
+/*********************************
+ FONTS
+ ********************************/
+
+h1, h2, h3, h4, h5, h6, input, form, nav, p, ol, ul, li {
+    font-family: arial, serif !important;
+}
+
 
 /*********************************
  MAIN DIVISION
  ********************************/
 
+ /* MAIN CONTAINER */
 .main {
     display: block;
-    margin: 0 auto;
     Height: 700px;
-    padding-top: 30px;
     margin: 30px;
     position: relative;
     background: lightgray;
@@ -17,40 +24,79 @@
  SEARCH FORM + BUTTONS
  ********************************/
 
-
-form {
+/* Centers search bar inside .main */
+.main form {
     background: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 
 }
-
+/* All input elements are now centered and stacked */
 form input {
     display: block;
     clear: both;
     margin: 0 auto;
 }
+/* Search Bar */
+form .text {
+    width: 400px;
+    height: 40px;
+    border: 2px solid blue
+    text-align: center;
+    margin-bottom: 12px;
+}
 
+
+/* Submit Buttons */
+
+/* center the two buttons via text-align. This works due to their display property
+being "inline" */
+.searchbar {
+    text-align: center;
+}
+/* submit buttons inline, white, no border, bolded */
+form .submit {
+    display: inline;
+    background: white;
+    border: 0;
+    font-weight: bold;
+
+}
+
+form .random {
+    
+}
 
 /*********************************
  NAVIGATION
  ********************************/
 
-
+/* Adds space around nav elements */
 .navigation {
     padding: 20px 0;
 }
 
-/* Turns navigation elements inline and black, padding to each element */
+/* Turns navigation elements inline and black, padding to each element.
+Get rid of list decorations. Font sized. */
  nav li {
     display: inline;
     color: black;
-    padding: 0 4px;
+    padding: 10px;
+    list-style-type: none;
+    font-size: 13px;
+    margin-left: 10px;
 
 }
 
-
 /* Nav bar: hover effects */
 nav .left-nav:hover {
+    text-decoration: underline;
+}
+
+nav .right-nav:hover {
     text-decoration: underline;
 }
 
@@ -66,5 +112,14 @@ nav .left-nav {
 /* Push Specific nav elements to right */
 nav .right-nav {
     float: right;
+
 }
+/*********************************
+ FOOTER
+ ********************************/
+
+ footer {
+     height: 60px;
+     background: lightgray;
+ }
 
