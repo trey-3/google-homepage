@@ -132,6 +132,14 @@ nav li a:link, nav li a:visited {
     color: black;
     text-decoration: none;
 }
+.navigation .left-nav a:link, .navigation .left-nav a:visited {
+    opacity: 0.75;
+}
+.navigation .right-nav a:link, .navigation .right-nav a:visited {
+    opacity: 0.85;
+}
+
+
 /* Push Specific nav elements to left */
 nav .left-nav {
     float: left;
@@ -154,7 +162,11 @@ nav .right-nav {
 }
 
 .notifications {
-  padding-top: 6px;
+    padding-top: 6px;
+}
+
+.apps {
+    padding-top: 7px;
 }
 
 /*********************************
