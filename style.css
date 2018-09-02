@@ -104,6 +104,7 @@ form .submit:hover {
 /* Adds space around nav elements */
 .navigation {
     padding: 20px;
+    min-width: 478px;
 }
 
 /* Turns navigation elements inline and black, padding to each element.
